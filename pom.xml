@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.egonw.bacting</groupId>
-
+    <packaging>pom</packaging>
     <description>Bacting := acting as the Bioclipse TNG. Bioclipse version that can be used
        from the command line, e.g. with Groovy.</description>
     <url>http://www.github.com/egonw/bacting</url>
