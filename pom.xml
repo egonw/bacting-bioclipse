@@ -3,18 +3,19 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.egonw.bacting</groupId>
-    <artifactId>bacting</artifactId>
-    <name>Bacting</name>
+
     <description>Bacting := acting as the Bioclipse TNG. Bioclipse version that can be used
        from the command line, e.g. with Groovy.</description>
     <url>http://www.github.com/egonw/bacting</url>
-    <version>0.0.8-SNAPSHOT</version>
-    <packaging>pom</packaging>
+
+    <artifactId>bioclipse</artifactId>
+    <name>Bacting Bioclipse</name>
+    <version>2.8.0.4-SNAPSHOT</version>
 
     <licenses>
       <license>
         <name>Eclipse Public License v1.0 + GPL Exception</name>
-        <url>https://github.com/egonw/bacting/blob/master/LICENSE.md</url>
+        <url>https://github.com/egonw/bacting-bioclipse/blob/master/LICENSE.md</url>
       </license>
     </licenses>
 
@@ -28,19 +29,20 @@
     </developers>
 
     <scm>
-      <connection>scm:git:git://github.com/egonw/bacting.git</connection>
-      <developerConnection>scm:git:ssh://git@github.com/egonw/bacting.git</developerConnection>
-      <url>http://github.com/egonw/bacting/tree/master</url>
+      <connection>scm:git:git://github.com/egonw/bacting-bioclipse.git</connection>
+      <developerConnection>scm:git:ssh://git@github.com/egonw/bacting-bioclipse.git</developerConnection>
+      <url>http://github.com/egonw/bacting-bioclipse/tree/master</url>
       <tag>HEAD</tag>
   </scm>
 
     <modules>
-        <module>bioclipse</module>
-        <module>managers-bioinfo</module>
-        <module>managers-cheminfo</module>
-        <module>managers-core</module>
-        <module>managers-excel</module>
-        <module>managers-rdf</module>
+        <module>net.bioclipse.bridgedb</module>
+        <module>net.bioclipse.core</module>
+        <module>net.bioclipse.cdk.business</module>
+        <module>net.bioclipse.inchi</module>
+        <module>net.bioclipse.rdf.core</module>
+        <module>net.bioclipse.rdf</module>
+        <module>net.bioclipse.report</module>
     </modules>
 
     <distributionManagement>
