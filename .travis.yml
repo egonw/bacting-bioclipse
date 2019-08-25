@@ -1,2 +1,6 @@
 language: java
-script: mvn clean install -Dgpg.skip
+install:
+  - mvn install -Dgpg.skip
+script:
+  - mvn clean
+  - mvn install
