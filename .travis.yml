@@ -1,6 +1,6 @@
 language: java
 install:
-  - mvn install -Dgpg.skip
+  - mvn install -Dgpg.skip -Dmaven.javadoc.skip=true
 script:
   - mvn clean
   - mvn install
