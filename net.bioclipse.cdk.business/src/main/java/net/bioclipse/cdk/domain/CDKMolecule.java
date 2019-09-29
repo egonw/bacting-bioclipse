@@ -76,7 +76,6 @@ public class CDKMolecule extends BioObject implements ICDKMolecule {
      * 
      * @param name
      * @param atomContainer
-     * @param smiles
      * @param fingerprint
      */
     public CDKMolecule( String name, 
@@ -202,7 +201,6 @@ public class CDKMolecule extends BioObject implements ICDKMolecule {
 
     /**
      * Calculate CDK fingerprint and cache the result.
-     * @param force if true, do not use cache but force calculation
      * @return
      * @throws BioclipseException
      */
