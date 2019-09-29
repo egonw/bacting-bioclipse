@@ -43,7 +43,7 @@ public class StringMatrixHelper {
 	 * 
 	 * @param prefixMap
 	 * @param results
-	 * @return
+	 * @return a {@link StringMatrix} representation of the result set
 	 */
     public static StringMatrix convertIntoTable(
             PrefixMapping prefixMap, ResultSet results) {
