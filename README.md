@@ -4,9 +4,21 @@
 
 # Bacting - the Bioclipse bundles
 
-Bacting := acting as the Bioclipse TNG
+Bacting := acting as the Bioclipse TNG (The Next Generation)
 
+These are supporting libraries and not meant to be used directly.
 Please read the documentation of [Bacting](https://github.com/egonw/bacting) instead.
+
+## Making releases
+
+Releases are created by the release manager and requires permission to submit the release to Maven Central
+(using an approved Sonatype ([oss.sonatype.org](http://oss.sonatype.org/)) account).
+If these requirements are fulfilled then the following two commands to the job:
+
+```shell
+mvn release:prepare
+mvn release:perform
+```
 
 # Copyright and authors
 
