@@ -1,5 +1,5 @@
 [![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)
-[![Build Status](https://travis-ci.org/egonw/bacting-bioclipse.svg?branch=master)](https://travis-ci.org/egonw/bacting-bioclipse)
+![build](https://github.com/egonw/bacting-bioclipse/workflows/build/badge.svg)
 [![Maven Central](https://img.shields.io/maven-central/v/io.github.egonw.bacting/bioclipse.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22io.github.egonw.bacting%22%20AND%20a:%22bioclipse%22)
 
 # Bacting - the Bioclipse bundles
