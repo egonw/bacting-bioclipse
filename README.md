@@ -13,11 +13,18 @@ Please read the documentation of [Bacting](https://github.com/egonw/bacting) ins
 
 Releases are created by the release manager and requires permission to submit the release to Maven Central
 (using an approved Sonatype ([oss.sonatype.org](http://oss.sonatype.org/)) account).
-If these requirements are fulfilled then the following two commands to the job:
+
+Instructions to increase the version:
 
 ```shell
-mvn release:prepare
-mvn release:perform
+mvn versions:set -DnewVersion=2.8.0.10-SNAPSHOT
+```
+
+Deploy to Sonatype with the following commands, for snapshots and releases respectively:
+
+```sh1ll
+mvn clean deploy
+mvn clean deploy -P release
 ```
 
 # Copyright and authors
