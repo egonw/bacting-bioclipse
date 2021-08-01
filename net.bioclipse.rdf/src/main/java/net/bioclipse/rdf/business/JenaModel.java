@@ -1,5 +1,4 @@
-/*******************************************************************************
- * Copyright (c) 2009  Egon Willighagen <egonw@users.sf.net>
+/* Copyright (c) 2009-2021  Egon Willighagen <egonw@users.sf.net>
  *
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
@@ -7,11 +6,11 @@
  * http://www.eclipse.org/legal/epl-v10.html
  * 
  * Contact: http://www.bioclipse.net/
- ******************************************************************************/
+ */
 package net.bioclipse.rdf.business;
 
-import com.hp.hpl.jena.rdf.model.Model;
-import com.hp.hpl.jena.rdf.model.ModelFactory;
+import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.ModelFactory;
 
 public class JenaModel implements IJenaStore {
 
@@ -22,10 +21,6 @@ public class JenaModel implements IJenaStore {
     }
 
     public JenaModel(boolean ontologyModel) {
-    	org.apache.jena.riot.adapters.JenaReadersWriters.RDFReaderRIOT_TTL.class.getName();
-    	org.apache.jena.riot.adapters.JenaReadersWriters.RDFReaderRIOT_NT.class.getName();
-    	org.apache.jena.riot.adapters.JenaReadersWriters.RDFReaderRIOT_RDFJSON.class.getName();
-    	org.apache.jena.riot.adapters.JenaReadersWriters.RDFReaderRIOT_RDFXML.class.getName();
     	if (ontologyModel)
     		model = ModelFactory.createOntologyModel();
     	else
@@ -37,10 +32,6 @@ public class JenaModel implements IJenaStore {
     }
 
     public JenaModel( Model jenaTypeModel, boolean ontologyModel ) {
-    	org.apache.jena.riot.adapters.JenaReadersWriters.RDFReaderRIOT_TTL.class.getName();
-    	org.apache.jena.riot.adapters.JenaReadersWriters.RDFReaderRIOT_NT.class.getName();
-    	org.apache.jena.riot.adapters.JenaReadersWriters.RDFReaderRIOT_RDFJSON.class.getName();
-    	org.apache.jena.riot.adapters.JenaReadersWriters.RDFReaderRIOT_RDFXML.class.getName();
     	if (ontologyModel) {
     		model = ModelFactory.createOntologyModel();
     		model.add( jenaTypeModel );
