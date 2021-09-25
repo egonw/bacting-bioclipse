@@ -22,7 +22,7 @@ mvn versions:set -DnewVersion=2.8.0.10-SNAPSHOT
 
 Deploy to Sonatype with the following commands, for snapshots and releases respectively:
 
-```sh1ll
+```shell
 mvn clean deploy
 mvn clean deploy -P release
 ```
