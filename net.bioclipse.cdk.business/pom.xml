@@ -12,7 +12,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <cdk.version>2.6</cdk.version>
+    <cdk.version>2.7.1</cdk.version>
   </properties>
 
   <build>
@@ -56,6 +56,11 @@
     <dependency>
       <groupId>org.openscience.cdk</groupId>
       <artifactId>cdk-inchi</artifactId>
+      <version>${cdk.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.openscience.cdk</groupId>
+      <artifactId>cdk-jniinchi-support</artifactId>
       <version>${cdk.version}</version>
     </dependency>
   </dependencies>
