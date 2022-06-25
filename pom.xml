@@ -56,6 +56,14 @@
         </repository>
     </distributionManagement>
 
+    <repositories>
+        <repository>
+            <id>ossrh</id>
+            <name>Sonatype Snapshot repository</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </repository>
+    </repositories>
+
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
