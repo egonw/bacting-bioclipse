@@ -30,8 +30,9 @@ public interface ICDKMolecule extends IMolecule{
 
     /**
      * Calculate CDK fingerprint and cache the result.
-     * @param force if true, do not use cache but force calculation
-     * @return a {@link BitSet} representation of the fingerprint
+     *
+     * @param urgency parameter to encourage recalculation
+     * @return        a {@link BitSet} representation of the fingerprint
      * @throws BioclipseException
      */
     public BitSet getFingerprint(IMolecule.Property urgency) throws BioclipseException;
@@ -39,8 +40,8 @@ public interface ICDKMolecule extends IMolecule{
     /**
      * Calculate the InChI and cache the result.
      *
-     * @param force if true, do not use cache but force calculation
-     * @return the InChI as string
+     * @param urgency parameter to encourage recalculation
+     * @return        the InChI as string
      * @throws BioclipseException
      */
     public String getInChI(IMolecule.Property urgency) throws BioclipseException;
@@ -48,8 +49,8 @@ public interface ICDKMolecule extends IMolecule{
     /**
      * Calculate the InChIKey and cache the result.
      *
-     * @param force if true, do not use cache but force calculation
-     * @return the InChIKey as string
+     * @param urgency parameter to encourage recalculation
+     * @return         the InChIKey as string
      * @throws BioclipseException
      */
     public String getInChIKey(IMolecule.Property urgency) throws BioclipseException;
