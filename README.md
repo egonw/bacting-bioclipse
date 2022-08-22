@@ -17,7 +17,7 @@ Releases are created by the release manager and requires permission to submit th
 Instructions to increase the version:
 
 ```shell
-mvn versions:set -DnewVersion=2.8.0.19-SNAPSHOT
+mvn versions:set -DnewVersion=2.8.0.20-SNAPSHOT
 ```
 
 Deploy to Sonatype with the following commands, for snapshots and releases respectively:
