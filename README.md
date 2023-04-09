@@ -24,7 +24,6 @@ Deploy to Sonatype with the following commands, for snapshots and releases respe
 
 ```shell
 mvn clean deploy
-mvn clean deploy -P release
 ```
 
 # Copyright and authors
