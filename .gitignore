@@ -3,3 +3,4 @@
 **/.settings/
 **/*.versionsBackup
 target/
+deps.log
