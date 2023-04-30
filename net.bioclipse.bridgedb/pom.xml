@@ -38,7 +38,7 @@
     <dependency>
       <groupId>org.bridgedb</groupId>
         <artifactId>org.bridgedb</artifactId>
-        <version>3.0.21</version>
+        <version>${bridgedb.version}</version>
     </dependency>
   </dependencies>
 </project>
