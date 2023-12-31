@@ -5,8 +5,8 @@ authors:
     given-names: Egon
     orcid: https://orcid.org/0000-0001-7542-0286
 title: Bioclipse Libraries
-version: 2.8.0.25
-date-released: 2023-12-18
+version: 2.8.1.0
+date-released: 2023-12-31
 url: "https://github.com/egonw/bacting-bioclipse"
 preferred-citation:
   type: article
