@@ -70,7 +70,7 @@
 
     <repositories>
         <repository>
-            <id>ossrh</id>
+            <id>sonatypeSnapshots</id>
             <name>Sonatype Snapshot repository</name>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </repository>
