@@ -35,8 +35,10 @@ public class InChI {
     };
     
     /**
-     * @param key a InChi key
-     * @param value an InChi value
+     * Creates a new InChI object with a key and a full string.
+     *
+     * @param key a InChIKey
+     * @param value a full Standard InChI value
      */
     public InChI(String key, String value) {
         this.key = key;

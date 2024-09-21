@@ -96,10 +96,32 @@ public interface IReport {
 	public IReport addTable(IStringMatrix matrix, String caption);
 	public IReport addBox(int height, int width);
 
+	/**
+	 * Starts a new report paragraph.
+	 *
+	 * @return        the current working model
+	 */
 	public IReport startParagraph();
+
+	/**
+	 * Ends the current report paragraph.
+	 *
+	 * @return        the current working model
+	 */
 	public IReport endParagraph();
 
+	/**
+	 * Starts a new report indentation.
+	 *
+	 * @return        the current working model
+	 */
 	public IReport startIndent();
+
+	/**
+	 * Ends the current report indentation.
+	 *
+	 * @return        the current working model
+	 */
 	public IReport endIndent();
 	
 	public IReport forceNewLine();
