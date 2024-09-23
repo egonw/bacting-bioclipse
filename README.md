@@ -17,7 +17,7 @@ Releases are created by the release manager and requires permission to submit th
 Instructions to increase the version:
 
 ```shell
-mvn versions:set -DnewVersion=2.8.1.2-SNAPSHOT
+mvn versions:set -DnewVersion=2.8.1.3-SNAPSHOT
 ```
 
 Deploy to Sonatype with the following commands, for snapshots and releases respectively:
@@ -32,3 +32,4 @@ All code in this repository contains Bioclipse 2 code and the headers of the ind
 source code files describe who contributed to that code of that class, but unfortunately this code
 ownership is not always clear. I refer to the various [Bioclipse code repositories](https://github.com/bioclipse)
 for the git history for more information.
+
