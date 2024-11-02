@@ -10,14 +10,14 @@
 package net.bioclipse.rdf.business;
 
 import org.apache.jena.rdf.model.Model;
-import org.apache.jena.tdb.TDBFactory;
+import org.apache.jena.tdb2.TDB2Factory;
 
 public class TDBModel implements IJenaStore {
 
     private Model model;
     
     public TDBModel(String tripleStoreDirectoryPath) {
-        model = TDBFactory.createDataset(tripleStoreDirectoryPath).getDefaultModel();
+        model = TDB2Factory.connectDataset(tripleStoreDirectoryPath).getDefaultModel();
     }
     
     public Model getModel() {

@@ -12,7 +12,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <jena.version>4.10.0</jena.version>
+    <jena.version>5.2.0</jena.version>
   </properties>
 
   <repositories>
@@ -42,7 +42,7 @@
     </dependency>
     <dependency>
     	<groupId>org.apache.jena</groupId>
-    	<artifactId>jena-tdb</artifactId>
+    	<artifactId>jena-tdb2</artifactId>
     	<version>${jena.version}</version>
     </dependency>
     <dependency>
