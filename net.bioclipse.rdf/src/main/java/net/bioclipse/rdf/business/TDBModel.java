@@ -13,6 +13,7 @@ import java.nio.file.Paths;
 
 import org.apache.jena.dboe.base.file.Location;
 import org.apache.jena.query.Dataset;
+import org.apache.jena.query.ReadWrite;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.tdb2.TDB2Factory;
 
@@ -34,7 +35,14 @@ public class TDBModel implements IJenaDatasetStore {
     }
     
     public String toString() {
-        return "RDFStore (Jena TDB): " + getModel().size() + " triples";
+    	if (this.dataset.isInTransaction()) return "RDFStore (Jena TDB2): in transaction";
+
+    	long size;
+    	if (dataset.isInTransaction()) dataset.end();
+    	dataset.begin(ReadWrite.READ);
+    	size = dataset.getUnionModel().size();
+    	dataset.end();
+    	return "RDFStore (Jena TDB2): " + size + " triples";
     }
     
 }
