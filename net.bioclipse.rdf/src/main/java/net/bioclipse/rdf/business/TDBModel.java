@@ -1,4 +1,4 @@
-/* Copyright (c) 2009-2021  Egon Willighagen <egonw@users.sf.net>
+/* Copyright (c) 2009-2024  Egon Willighagen <egonw@users.sf.net>
  *
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
@@ -9,23 +9,32 @@
  */
 package net.bioclipse.rdf.business;
 
+import java.nio.file.Paths;
+
+import org.apache.jena.dboe.base.file.Location;
+import org.apache.jena.query.Dataset;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.tdb2.TDB2Factory;
 
-public class TDBModel implements IJenaStore {
+public class TDBModel implements IJenaDatasetStore {
 
-    private Model model;
-    
+    private Dataset dataset;
+
     public TDBModel(String tripleStoreDirectoryPath) {
-        model = TDB2Factory.connectDataset(tripleStoreDirectoryPath).getDefaultModel();
+    	Location location = Location.create(Paths.get(tripleStoreDirectoryPath).toAbsolutePath().normalize() + "/tdb2/");
+    	dataset = TDB2Factory.connectDataset(location);
+    }
+    
+    public Dataset getDataset() {
+        return this.dataset;
     }
     
     public Model getModel() {
-        return this.model;
+        return this.dataset.getUnionModel();
     }
     
     public String toString() {
-        return "RDFStore (Jena TDB): " + model.size() + " triples";
+        return "RDFStore (Jena TDB): " + getModel().size() + " triples";
     }
     
 }

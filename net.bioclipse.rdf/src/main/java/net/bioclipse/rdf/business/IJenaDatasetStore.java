@@ -9,10 +9,10 @@
  */
 package net.bioclipse.rdf.business;
 
-import org.apache.jena.rdf.model.Model;
+import org.apache.jena.query.Dataset;
 
-public interface IJenaStore extends IRDFStore {
+public interface IJenaDatasetStore extends IJenaStore {
 
-    public Model getModel();
+    public Dataset getDataset();
 
 }
