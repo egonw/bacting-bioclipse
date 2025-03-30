@@ -10,7 +10,7 @@
 
     <artifactId>bioclipse</artifactId>
     <name>Bacting Bioclipse</name>
-    <version>2.8.1.4-SNAPSHOT</version>
+    <version>2.8.1.4</version>
 
     <licenses>
       <license>
@@ -44,7 +44,7 @@
 
       <bridgedb.version>3.1.4</bridgedb.version>
       <cdk.version>2.11</cdk.version>
-      <cmlxom>4.10</cmlxom>
+      <cmlxom>4.11</cmlxom>
     </properties>
 
     <modules>
