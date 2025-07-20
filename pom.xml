@@ -44,7 +44,7 @@
 
       <bridgedb.version>3.1.4</bridgedb.version>
       <cdk.version>2.11</cdk.version>
-      <cmlxom>4.12</cmlxom>
+      <cmlxom>4.13</cmlxom>
     </properties>
 
     <modules>
