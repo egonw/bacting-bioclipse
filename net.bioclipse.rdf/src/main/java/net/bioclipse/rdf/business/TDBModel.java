@@ -26,6 +26,10 @@ public class TDBModel implements IJenaDatasetStore {
     	dataset = TDB2Factory.connectDataset(location);
     }
     
+    public TDBModel() {
+        dataset = TDB2Factory.createDataset();
+    }
+
     public Dataset getDataset() {
         return this.dataset;
     }
